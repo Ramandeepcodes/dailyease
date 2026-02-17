@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DailyEase{% endblock title %}</title>  
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>  
+    {% csrf_token %}
+    {% include "includes/header.html" %}
+        {% block content %}
+        {% endblock content %}
+    {% include "includes/footer.html" %}
+    <script src="{% static 'csrf.js' %}"></script>
+    <script src="{% static 'home.js' %}"></script>
+    <script src="{% static 'notes.js' %}"></script>
+    <script src="{% static 'tasks.js' %}"></script>
+</body>
+</html>

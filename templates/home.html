@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - DailyEase{% endblock title %}
+{% block content %}
+    <main>
+        <div id="home-intro">
+            <section class="hero">
+                <h2>Organize Your Day. Simplify Your Life</h2>
+                <p>Manage your tasks and notes efficiently with DailyEase.</p>
+                <button id="start-planning">Start Planning</button>
+            </section>
+            <section class="illustration">
+                <img src="{% static 'images/ideogram-v3.0_create_a_website_logo_of_daily_planner_its_look_colorful_more_vibrant_and_trendy-0 (1).jpg' %}" alt="Illustration of planning and organization"> 
+            </section>
+        </div>
+        <section id="main-features">
+            <h2>Why Choose DailyEase?</h2>
+            <div>
+                <div>
+                    <img src="{% static 'images/easy to use.png' %}" alt="Easy to Use Icon" class="icon">
+                    <h3>Easy to Use</h3>
+                    <p>Intuitive interface designed for quick task and note management.</p>
+                </div>
+                <div>
+                    <img src="{% static 'images/stay organized.png' %}" alt="Organize Icon" class="icon">
+                    <h3>Stay Organized</h3>
+                    <p>Keep all your tasks and notes in one place for better productivity.</p>
+                </div>
+                <div>
+                    <img src="{% static 'images/set reminders.png' %}" alt="Reminders Icon" class="icon">
+                    <h3>Set Reminders</h3>
+                    <p>Never miss a deadline with customizable reminders and notifications.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>CALL TO ACTION</h2>
+            <p>Sign up today and take the first step towards a more organized life!</p>
+            <button id="go-to-tasks">Go To Tasks</button>
+        </section>
+    </main>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Tasks - DailyEase{% endblock title %}  
+{% block content %}
+    <main>
+        <h2>Your Task</h2>
+        <input type="text" placeholder="Task Title" id ="task-title">
+        <button id="add-button">Add Task</button>
+        <section>
+            <h3>Task List</h3>
+            <ul id="task-list">
+                <!-- Task items will be dynamically added here -->
+                
+            </ul>
+        </section>
+    </main>
+    
+{% endblock content %}

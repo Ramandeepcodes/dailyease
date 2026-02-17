@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Notes - DailyEase{% endblock title %}
+{% block content %}
+    
+    <main>
+        <h2>Your Notes</h2>
+        <h3>Notes Card</h3>
+        <div>
+            <input type="text" placeholder="Note Title" id="note-title"><br>
+            <textarea placeholder="Write your note here..." id="note-content"></textarea>
+        </div>
+        <button id="add-note-button">Add Note</button>
+        
+        <section>
+            <h3>Notes List</h3>
+            <ul id="notes-list">
+                <!-- Note items will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+    
+{% endblock content %}
